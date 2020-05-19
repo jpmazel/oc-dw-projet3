@@ -1,0 +1,16 @@
+%btn {
+
+  border: 0;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  min-width: 200px;
+  background: $color-bg-header-footer;
+  color: $header-color-h1;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin btn-prochainement {
+  @extend %btn;
+}

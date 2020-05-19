@@ -1,4 +1,132 @@
-body{
-  background: green;
-  
+@import "variables";
+@import "button.scss";
+@import "mixins.scss";
+@import "media.scss";
+@import "functions.scss";
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.container_general {
+  background: whitesmoke;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bg-header-footer;
+  width: 100vw;
+  height: 100px;
+  & h1 {
+    color: $header-color-h1;
+    font-size: 4rem;
+  }
+}
+
+.grid_menu {  
+  display: grid;
+  width: 100%;
+  // min-height: 600px;
+  // height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 22rem 22rem 50px $footer-h; //22rem 350px
+  grid-template-areas:
+    "menu1 menu2"
+    "menu3 menu4"
+    "prochainement prochainement";
+  gap: 25px;
+   
+  justify-items: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-child(1) {
+    grid-area: menu1;
+    background: $color-bg-menu-1;
+    @include dimensions-menus;
+    @include titre-menu-accueil;
+    justify-self: end;
+    align-self: end;
+    & h2 {
+      font-family: "Satisfy", cursive;
+    }
+  }
+
+  &:nth-child(2) {
+    grid-area: menu2;
+    background: $color-bg-menu-2;
+    @include dimensions-menus;
+    @include titre-menu-accueil;
+    overflow: hidden;
+    justify-self: start;
+    align-self: end;
+    & h2 {
+      font-family: "DM Serif Display", serif;
+    }
+  }
+  &:nth-child(3) {
+    grid-area: menu3;
+    @include dimensions-menus;
+    @include titre-menu-accueil;
+    background: $color-bg-menu-3;
+    overflow: hidden;
+    justify-self: end;
+    align-self: start;
+    font-family: "Bad Script", cursive;
+    &:nth-child(3) {
+      font-family: "DM Serif Display", serif;
+    }
+  }
+  &:nth-child(4) {
+    grid-area: menu4;
+    background: $color-bg-menu-4;
+    @include dimensions-menus;
+    @include titre-menu-accueil;
+    overflow: hidden;
+    justify-self: start;
+    align-self: start;
+    & h2 {
+      font-family: "Kaushan Script", cursive;
+    }
+  }
+}
+
+.prochainement {
+  // grid-column: 1 / 3;
+  grid-area: prochainement;
+  @include btn-prochainement;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-bg-header-footer;
+  width: 100vw;
+  height: 80px;
+  & h3{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: $header-color-h1;
+  }
 }

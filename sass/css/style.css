@@ -1,5 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
+.prochainement {
+  border: 0;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  min-width: 200px;
+  background: #579C87;
+  color: orange;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: green;
+  position: relative;
+}
+
+.container_general {
+  background: whitesmoke;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579C87;
+  width: 100vw;
+  height: 100px;
+}
+header h1 {
+  color: orange;
+  font-size: 4rem;
+}
+
+.grid_menu {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 22rem 22rem 50px 75px;
+  grid-template-areas: "menu1 menu2" "menu3 menu4" "prochainement prochainement";
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu:nth-child(1) {
+  grid-area: menu1;
+  background: #FCDFDB;
+  width: 300px;
+  height: 300px;
+  justify-self: end;
+  align-self: end;
+}
+.menu:nth-child(1) h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menu:nth-child(1) span {
+  display: block;
+  padding-top: 2rem;
+}
+.menu:nth-child(1) h2 {
+  font-family: "Satisfy", cursive;
+}
+.menu:nth-child(2) {
+  grid-area: menu2;
+  background: #EBEBEB;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  justify-self: start;
+  align-self: end;
+}
+.menu:nth-child(2) h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menu:nth-child(2) span {
+  display: block;
+  padding-top: 2rem;
+}
+.menu:nth-child(2) h2 {
+  font-family: "DM Serif Display", serif;
+}
+.menu:nth-child(3) {
+  grid-area: menu3;
+  width: 300px;
+  height: 300px;
+  background: #FFF5FE;
+  overflow: hidden;
+  justify-self: end;
+  align-self: start;
+  font-family: "Bad Script", cursive;
+}
+.menu:nth-child(3) h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menu:nth-child(3) span {
+  display: block;
+  padding-top: 2rem;
+}
+.menu:nth-child(3):nth-child(3) {
+  font-family: "DM Serif Display", serif;
+}
+.menu:nth-child(4) {
+  grid-area: menu4;
+  background: #F9F9F9;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  justify-self: start;
+  align-self: start;
+}
+.menu:nth-child(4) h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menu:nth-child(4) span {
+  display: block;
+  padding-top: 2rem;
+}
+.menu:nth-child(4) h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.prochainement {
+  grid-area: prochainement;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #579C87;
+  width: 100vw;
+  height: 80px;
+}
+footer h3 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
