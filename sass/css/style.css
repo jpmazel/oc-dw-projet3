@@ -18,16 +18,7 @@
 
 body {
   position: relative;
-}
-
-.container_general {
   background: whitesmoke;
-  display: flex;
-  height: 100vh;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-between;
-  flex-wrap: wrap;
 }
 
 header {
@@ -143,6 +134,20 @@ header h1 {
 .prochainement {
   grid-area: prochainement;
 }
+.prochainement:hover {
+  animation: points 1000ms ease-in;
+}
+@keyframes points {
+  25% {
+    content: ". ";
+  }
+  50% {
+    content: ". ";
+  }
+  75% {
+    content: ". ";
+  }
+}
 
 footer {
   position: fixed;
@@ -158,6 +163,19 @@ footer h3 {
   margin-left: 6rem;
   margin-right: 6rem;
   color: orange;
+}
+footer h3:hover {
+  cursor: pointer;
+  animation: headshake 100ms ease-in-out;
+  animation-iteration-count: 20;
+}
+@keyframes headshake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

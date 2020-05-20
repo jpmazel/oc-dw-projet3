@@ -9,8 +9,10 @@
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+  
 }
 
 @mixin btn-prochainement {
   @extend %btn;
 }
+
