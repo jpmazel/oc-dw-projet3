@@ -31,7 +31,7 @@ header {
   align-items: center;
   background-color: $color-bg-header-footer;
   width: 100vw;
-  height: 100px;
+  height: 90px;
   & h1 {
     color: $header-color-h1;
     font-size: 4rem;
@@ -44,22 +44,44 @@ header {
   // min-height: 600px;
   // height: 100vh;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 22rem 22rem 50px $footer-h; //22rem 350px
+  grid-template-rows: 23rem 22rem 50px $footer-h; //22rem 350px
   grid-template-areas:
     "menu1 menu2"
     "menu3 menu4"
     "prochainement prochainement";
-  gap: 25px;
+  gap: 20px;
 
   justify-items: center;
   align-items: center;
 }
+.lienMenu01{
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    // transform: scale(1.5);
+    @include  zoom-menu
+  }
+  }
 
 .menu {
+  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  & .zoom-text{
+    a:hover{
+    // transform: scale(1.0);
+    @include  zoom-menu;}
+  }
+
   &:nth-child(1) {
+    .svg{
+      @include note-de-musique (#3D1319, #3D1319);
+      padding-bottom: 25px;
+      text-align: center;
+    }
     grid-area: menu1;
     background: $color-bg-menu-1;
     @include dimensions-menus;
@@ -68,10 +90,17 @@ header {
     align-self: end;
     & h2 {
       font-family: "Satisfy", cursive;
+      @include couleur-titre-menu(45deg, #3D1319, #3D1319);
+      
     }
+    & h3{
+      font-family: "Satisfy", cursive;
+      @include couleur-menu-menu(#3D1319, #3D1319);
+    }
+    
   }
 
-  &:nth-child(2) {
+  &:nth-child(2) {    
     grid-area: menu2;
     background: $color-bg-menu-2;
     @include dimensions-menus;
@@ -81,6 +110,11 @@ header {
     align-self: end;
     & h2 {
       font-family: "DM Serif Display", serif;
+      @include couleur-titre-menu(160deg,#E0881D 5%, #8F5AFF 80%);
+    }
+    & h3{
+      font-family: "DM Serif Display", serif;
+      @include couleur-menu-menu(#C77412, #C77412);
     }
   }
   &:nth-child(3) {
@@ -90,10 +124,14 @@ header {
     background: $color-bg-menu-3;
     overflow: hidden;
     justify-self: end;
-    align-self: start;
-    font-family: "Bad Script", cursive;
-    &:nth-child(3) {
-      font-family: "DM Serif Display", serif;
+    align-self: start;    
+    & h2{
+      font-family: "Bad Script", cursive;
+      @include couleur-titre-menu(160deg, #0023DB, #0889FB 50%);
+    }
+    & h3{
+      font-family: "Bad Script", cursive;
+      @include couleur-menu-menu(#0887FB , #0887FB );
     }
   }
   &:nth-child(4) {
@@ -106,6 +144,11 @@ header {
     align-self: start;
     & h2 {
       font-family: "Kaushan Script", cursive;
+      @include couleur-titre-menu(45deg, #3E923A, #BEFF7F 75%);
+    }
+    & h3{
+      font-family: "Kaushan Script", cursive;
+      @include couleur-menu-menu(#72BF56, #72BF56);
     }
   }
 }
@@ -115,9 +158,14 @@ header {
   grid-area: prochainement;
   @include btn-prochainement;
 
+  
+
   &:hover {
     @include pointSuspension;
   }
+}
+ .petitPoint::after{
+  content: ". . . ";
 }
 
 footer {

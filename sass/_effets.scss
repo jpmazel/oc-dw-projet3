@@ -1,14 +1,33 @@
 // tremblement
 @mixin tremblement {
-  animation: headshake 100ms ease-in-out;
+  animation: headshake 80ms ease-in-out;
   animation-iteration-count: 20;
   @keyframes headshake {
-    25% {
+    0% {
       transform: translateX($shake-intensity);
+      transform: rotate($rotate);
     }
-    75% {
-      transform: translateX($shake-intensity);
+    100% {
+      transform: translateX(-$shake-intensity);
+      transform: rotate(-$rotate);
     }
+  } 
+}
+
+@mixin zoom-menu{
+  animation-name: zoom; 
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  @keyframes zoom{
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.3);
+    }
+    
   }
 }
 

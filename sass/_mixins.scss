@@ -1,6 +1,7 @@
 @mixin dimensions-menus {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0px 0px 10px -3px black; //x, y , effet de flou, portée du blur
 }
 
 @mixin titre-menu-accueil{
@@ -9,10 +10,35 @@
     text-align: center;
     font-size: 2rem;
   }
-  
-  & span{
-    display: block;
-    padding-top: 2rem;
-  }
 
+  h3{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  
+  // & span{
+  //   display: block;
+  //   padding-top: 2rem;
+  // }
 }
+@mixin note-de-musique ($d, $f){
+  background-image: linear-gradient($d, $f);
+      -webkit-background-clip: text; //support partiel
+      -webkit-text-fill-color: transparent; //support partiel
+}
+
+@mixin couleur-titre-menu ($deg, $d, $f){
+  background-image: linear-gradient($deg, $d, $f);
+      -webkit-background-clip: text; //support partiel
+      -webkit-text-fill-color: transparent; //support partiel
+}
+
+@mixin couleur-menu-menu ($d, $f){
+  background-image: linear-gradient($d, $f);
+      -webkit-background-clip: text; //support partiel
+      -webkit-text-fill-color: transparent; //support partiel
+}
+
+
+
