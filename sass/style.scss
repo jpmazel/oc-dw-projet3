@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   // justify-content: center;
   // align-content: space-between;
   // flex-wrap: wrap;
+  
 }
 
 header {
@@ -41,8 +43,6 @@ header {
 .grid_menu {
   display: grid;
   width: 100%;
-  // min-height: 600px;
-  // height: 100vh;
   grid-template-columns: 50% 50%;
   grid-template-rows: 23rem 22rem 50px $footer-h; //22rem 350px
   grid-template-areas:
@@ -51,18 +51,9 @@ header {
     "prochainement prochainement";
   gap: 20px;
 
-  justify-items: center;
+  justify-items: end;
   align-items: center;
 }
-.lienMenu01{
-  a{
-    text-decoration: none;
-  }
-  a:hover{
-    // transform: scale(1.5);
-    @include  zoom-menu
-  }
-  }
 
 .menu {
   
@@ -70,12 +61,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  & .zoom-text{
-    a:hover{
-    // transform: scale(1.0);
-    @include  zoom-menu;}
-  }
-
+  
   &:nth-child(1) {
     .svg{
       @include note-de-musique (#3D1319, #3D1319);
@@ -142,7 +128,7 @@ header {
     overflow: hidden;
     justify-self: start;
     align-self: start;
-    & h2 {
+    &  h2 {
       font-family: "Kaushan Script", cursive;
       @include couleur-titre-menu(45deg, #3E923A, #BEFF7F 75%);
     }
@@ -153,12 +139,11 @@ header {
   }
 }
 
+
 .prochainement {
   // grid-column: 1 / 3;
   grid-area: prochainement;
   @include btn-prochainement;
-
-  
 
   &:hover {
     @include pointSuspension;
