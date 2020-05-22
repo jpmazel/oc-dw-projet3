@@ -23,7 +23,8 @@ body {
   // flex-direction: row;
   // justify-content: center;
   // align-content: space-between;
-  // flex-wrap: wrap;
+  // flex-wrap: wrap ;  
+ 
   
 }
 
@@ -41,7 +42,7 @@ header {
 }
 
 .grid_menu {
-  display: grid;
+  display: grid;  
   width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: 23rem 22rem 50px $footer-h; //22rem 350px
@@ -51,18 +52,54 @@ header {
     "prochainement prochainement";
   gap: 20px;
 
-  justify-items: end;
+  justify-items: center;
   align-items: center;
 }
 
-.menu {
-  
+.postion-grille-menu-1{
+  justify-self: end;
+   align-self: end;
+}
+
+.postion-grille-menu-2{
+  justify-self: start;
+   align-self: end;
+}
+
+.postion-grille-menu-3{
+  justify-self: end;
+   align-self: end;
+}
+
+.postion-grille-menu-4{
+  justify-self: start;
+   align-self: start;
+}
+
+
+
+.text-menu-zoom{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  justify-items: center;  
+  @include text-menu-zoom;
+}
+.menu {
   
-  &:nth-child(1) {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  
+}
+  
+ .menu1 {
+    // justify-self: end;
+    // align-self: end;
+    
     .svg{
       @include note-de-musique (#3D1319, #3D1319);
       padding-bottom: 25px;
@@ -72,8 +109,7 @@ header {
     background: $color-bg-menu-1;
     @include dimensions-menus;
     @include titre-menu-accueil;
-    justify-self: end;
-    align-self: end;
+    
     & h2 {
       font-family: "Satisfy", cursive;
       @include couleur-titre-menu(45deg, #3D1319, #3D1319);
@@ -82,11 +118,10 @@ header {
     & h3{
       font-family: "Satisfy", cursive;
       @include couleur-menu-menu(#3D1319, #3D1319);
-    }
-    
+    }    
   }
 
-  &:nth-child(2) {    
+  .menu2 {    
     grid-area: menu2;
     background: $color-bg-menu-2;
     @include dimensions-menus;
@@ -103,7 +138,8 @@ header {
       @include couleur-menu-menu(#C77412, #C77412);
     }
   }
-  &:nth-child(3) {
+
+  .menu3 {
     grid-area: menu3;
     @include dimensions-menus;
     @include titre-menu-accueil;
@@ -120,7 +156,8 @@ header {
       @include couleur-menu-menu(#0887FB , #0887FB );
     }
   }
-  &:nth-child(4) {
+
+  .menu4 {
     grid-area: menu4;
     background: $color-bg-menu-4;
     @include dimensions-menus;
@@ -137,7 +174,7 @@ header {
       @include couleur-menu-menu(#72BF56, #72BF56);
     }
   }
-}
+
 
 
 .prochainement {

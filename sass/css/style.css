@@ -42,54 +42,80 @@ header h1 {
   grid-template-rows: 23rem 22rem 50px 75px;
   grid-template-areas: "menu1 menu2" "menu3 menu4" "prochainement prochainement";
   gap: 20px;
-  justify-items: end;
+  justify-items: center;
   align-items: center;
 }
 
-.menu {
+.postion-grille-menu-1 {
+  justify-self: end;
+  align-self: end;
+}
+
+.postion-grille-menu-2 {
+  justify-self: start;
+  align-self: end;
+}
+
+.postion-grille-menu-3 {
+  justify-self: end;
+  align-self: end;
+}
+
+.postion-grille-menu-4 {
+  justify-self: start;
+  align-self: start;
+}
+
+.text-menu-zoom {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
 }
-.menu:nth-child(1) {
+.text-menu-zoom:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.menu1 {
   grid-area: menu1;
   background: #FCDFDB;
   width: 350px;
   height: 350px;
   box-shadow: 0px 0px 10px -3px black;
-  justify-self: end;
-  align-self: end;
 }
-.menu:nth-child(1) .svg {
+.menu1 .svg {
   background-image: linear-gradient(#3D1319, #3D1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 25px;
   text-align: center;
 }
-.menu:nth-child(1) h2 {
+.menu1 h2 {
   text-align: center;
   font-size: 2rem;
 }
-.menu:nth-child(1) h3 {
+.menu1 h3 {
   text-align: center;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
-.menu:nth-child(1) h2 {
+.menu1 h2 {
   font-family: "Satisfy", cursive;
   background-image: linear-gradient(45deg, #3D1319, #3D1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(1) h3 {
+.menu1 h3 {
   font-family: "Satisfy", cursive;
   background-image: linear-gradient(#3D1319, #3D1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(2) {
+
+.menu2 {
   grid-area: menu2;
   background: #EBEBEB;
   width: 350px;
@@ -99,28 +125,29 @@ header h1 {
   justify-self: start;
   align-self: end;
 }
-.menu:nth-child(2) h2 {
+.menu2 h2 {
   text-align: center;
   font-size: 2rem;
 }
-.menu:nth-child(2) h3 {
+.menu2 h3 {
   text-align: center;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
-.menu:nth-child(2) h2 {
+.menu2 h2 {
   font-family: "DM Serif Display", serif;
   background-image: linear-gradient(160deg, #E0881D 5%, #8F5AFF 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(2) h3 {
+.menu2 h3 {
   font-family: "DM Serif Display", serif;
   background-image: linear-gradient(#C77412, #C77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(3) {
+
+.menu3 {
   grid-area: menu3;
   width: 350px;
   height: 350px;
@@ -130,28 +157,29 @@ header h1 {
   justify-self: end;
   align-self: start;
 }
-.menu:nth-child(3) h2 {
+.menu3 h2 {
   text-align: center;
   font-size: 2rem;
 }
-.menu:nth-child(3) h3 {
+.menu3 h3 {
   text-align: center;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
-.menu:nth-child(3) h2 {
+.menu3 h2 {
   font-family: "Bad Script", cursive;
   background-image: linear-gradient(160deg, #0023DB, #0889FB 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(3) h3 {
+.menu3 h3 {
   font-family: "Bad Script", cursive;
   background-image: linear-gradient(#0887FB, #0887FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(4) {
+
+.menu4 {
   grid-area: menu4;
   background: #F9F9F9;
   width: 350px;
@@ -161,22 +189,22 @@ header h1 {
   justify-self: start;
   align-self: start;
 }
-.menu:nth-child(4) h2 {
+.menu4 h2 {
   text-align: center;
   font-size: 2rem;
 }
-.menu:nth-child(4) h3 {
+.menu4 h3 {
   text-align: center;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
-.menu:nth-child(4) h2 {
+.menu4 h2 {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(45deg, #3E923A, #BEFF7F 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu:nth-child(4) h3 {
+.menu4 h3 {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(#72BF56, #72BF56);
   -webkit-background-clip: text;
