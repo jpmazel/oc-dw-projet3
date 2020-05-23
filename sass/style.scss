@@ -84,16 +84,17 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center;  
+  justify-items: center;
+  transform: scale(1); 
+  transition-property: transform;//modif ok
+  transition-duration: 1s;//modif ok
   @include text-menu-zoom;
 }
-.menu {
-  
+.menu {  
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
-  // align-items: center;
-  
+  // align-items: center;  
 }
   
  .menu1 {

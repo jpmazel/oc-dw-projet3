@@ -36,11 +36,6 @@
       -webkit-text-fill-color: transparent; //support partiel
 }
 
-@mixin text-menu-zoom{
-  &:hover{
-    transform: scale(1.1);
-    transition-duration: 2s;
-  }
-}
+
 
 

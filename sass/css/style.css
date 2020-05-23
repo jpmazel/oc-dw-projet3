@@ -73,10 +73,12 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
 }
 .text-menu-zoom:hover {
   transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 .menu1 {
