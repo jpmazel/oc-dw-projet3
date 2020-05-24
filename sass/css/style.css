@@ -7,10 +7,22 @@
   background: #579C87;
   color: orange;
   font-weight: 700;
+  font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
 }
 
+@keyframes pointille {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +131,7 @@ header h1 {
 
 .menu2 {
   grid-area: menu2;
-  background: #EBEBEB;
+  background: #FFF5FE;
   width: 350px;
   height: 350px;
   box-shadow: 0px 0px 10px -3px black;
@@ -154,7 +166,7 @@ header h1 {
   width: 350px;
   height: 350px;
   box-shadow: 0px 0px 10px -3px black;
-  background: #FFF5FE;
+  background: #EBEBEB;
   overflow: hidden;
   justify-self: end;
   align-self: start;
@@ -216,23 +228,16 @@ header h1 {
 .prochainement {
   grid-area: prochainement;
 }
-.prochainement:hover {
-  animation: points 1000ms ease-in;
+.prochainement .btn-span {
+  animation: pointille 1.7s ease-in-out infinite both;
+  opacity: 1;
+  font-size: 2rem;
 }
-@keyframes points {
-  25% {
-    content: ". ";
-  }
-  50% {
-    content: ". ";
-  }
-  75% {
-    content: ". ";
-  }
+.prochainement .btn-span:nth-child(2) {
+  animation-delay: 0.2s;
 }
-
-.petitPoint::after {
-  content: ". . . ";
+.prochainement .btn-span:nth-child(3) {
+  animation-delay: 0.2s;
 }
 
 footer {
@@ -244,6 +249,9 @@ footer {
   background-color: #579C87;
   width: 100vw;
   height: 80px;
+}
+footer a:link {
+  color: orange;
 }
 footer h3 {
   margin-left: 6rem;

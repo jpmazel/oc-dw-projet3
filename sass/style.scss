@@ -182,16 +182,15 @@ header {
   // grid-column: 1 / 3;
   grid-area: prochainement;
   @include btn-prochainement;
+  @include anime-pointille;
 
-  &:hover {
-    @include pointSuspension;
-  }
-}
- .petitPoint::after{
-  content: ". . . ";
 }
 
 footer {
+  a:link{
+    color:orange;
+  }
+  
   position: fixed;
   bottom: 0;
   display: flex;

@@ -11,31 +11,39 @@
       transform: translateX(-$shake-intensity);
       transform: rotate(-$rotate);
     }
-  } 
-}
-
-@mixin text-menu-zoom{
-  &:hover{
-    transform: scale(1.1);
-    
-    
   }
 }
 
-//les points de suspensions
-@mixin pointSuspension {
-  animation: points 1000ms ease-in;
-  @keyframes points {
-    25% {
-      content: ". ";
-    }
+@mixin text-menu-zoom {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
-    50% {
-      content: ". ";
-    }
+//les points de suspensions animations
 
-    75% {
-      content: ". ";
+@mixin anime-pointille {
+  .btn-span {
+    animation: pointille 1.7s ease-in-out infinite both;
+    opacity: 1;
+    font-size: 2rem;
+    &:nth-child(2) {
+      animation-delay: 0.2s;
     }
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+  }
+}
+
+@keyframes pointille {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
