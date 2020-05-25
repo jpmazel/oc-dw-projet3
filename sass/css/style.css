@@ -34,6 +34,10 @@ body {
   background: whitesmoke;
 }
 
+.container_general {
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -309,6 +313,9 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
+.trait-menu-miseenpage img {
+  min-width: 35%;
+}
 
 .center-note-menu1 {
   width: 100%;
@@ -340,6 +347,7 @@ header h1 {
   text-align: center;
 }
 .menus-1 a {
+  color: black;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
   background-size: 0 100%;
   /* largeur hauteur */
