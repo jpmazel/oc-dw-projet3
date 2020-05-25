@@ -23,9 +23,7 @@ body {
   // flex-direction: row;
   // justify-content: center;
   // align-content: space-between;
-  // flex-wrap: wrap ;  
- 
-  
+  // flex-wrap: wrap ;
 }
 
 header {
@@ -42,167 +40,268 @@ header {
 }
 
 .grid_menu {
-  display: grid;  
+  display: grid;
   width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: 23rem 22rem 50px $footer-h; //22rem 350px
   grid-template-areas:
     "menu1 menu2"
     "menu3 menu4"
-    "prochainement prochainement"
-    ;
+    "prochainement prochainement";
   gap: 20px;
   justify-items: center;
   align-items: center;
 
- @include smartphone-grid;  
+  @include smartphone-grid;
 }
 
-.postion-grille-menu-1{
+.postion-grille-menu-1 {
   justify-self: end;
-   align-self: end;
-   @include smarphone-cell;
+  align-self: end;
+  @include smarphone-cell;
 }
 
-.postion-grille-menu-2{
+.postion-grille-menu-2 {
   justify-self: start;
-   align-self: end;
-   @include smarphone-cell;
+  align-self: end;
+  @include smarphone-cell;
 }
 
-.postion-grille-menu-3{
+.postion-grille-menu-3 {
   justify-self: end;
-   align-self: end;
-   @include smarphone-cell;
+  align-self: end;
+  @include smarphone-cell;
 }
 
-.postion-grille-menu-4{
+.postion-grille-menu-4 {
   justify-self: start;
-   align-self: start;
-   @include smarphone-cell;
+  align-self: start;
+  @include smarphone-cell;
 }
 
-.postion-grille-menu-prochainement{
-  
-  
-  
+.postion-grille-menu-prochainement {
   // @include smarphone-cell-prochainement;
 }
 
-
-.text-menu-zoom{
+.text-menu-zoom {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  transform: scale(1); 
-  transition-property: transform;//modif ok
-  transition-duration: 1s;//modif ok
+  transform: scale(1);
+  transition-property: transform; //modif ok
+  transition-duration: 1s; //modif ok
   @include text-menu-zoom;
 }
-.menu {  
+.menu {
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
-  // align-items: center;  
+  // align-items: center;
 }
-  
- .menu1 {
-    // justify-self: end;
-    // align-self: end;
-    
-    .svg{
-      @include note-de-musique (#3D1319, #3D1319);
-      padding-bottom: 25px;
-      text-align: center;
-    }
-    grid-area: menu1;
-    background: $color-bg-menu-1;
-    @include dimensions-menus;
-    @include titre-menu-accueil;
-    
-    & h2 {
-      font-family: "Satisfy", cursive;
-      @include couleur-titre-menu(45deg, #3D1319, #3D1319);
-      
-    }
-    & h3{
-      font-family: "Satisfy", cursive;
-      @include couleur-menu-menu(#3D1319, #3D1319);
-    }    
+
+.menu1 {
+  // justify-self: end;
+  // align-self: end;
+
+  .svg {
+    @include note-de-musique(#3d1319, #3d1319);
+    padding-bottom: 25px;
+    text-align: center;
   }
+  grid-area: menu1;
+  background: $color-bg-menu-1;
+  @include dimensions-menus;
+  @include titre-menu-accueil;
 
-  .menu2 {    
-    grid-area: menu2;
-    background: $color-bg-menu-2;
-    @include dimensions-menus;
-    @include titre-menu-accueil;
-    overflow: hidden;
-    justify-self: start;
-    align-self: end;
-    & h2 {
-      font-family: "DM Serif Display", serif;
-      @include couleur-titre-menu(160deg,#E0881D 5%, #8F5AFF 80%);
-    }
-    & h3{
-      font-family: "DM Serif Display", serif;
-      @include couleur-menu-menu(#C77412, #C77412);
-    }
+  & h2 {
+    font-family: "Satisfy", cursive;
+    @include couleur-titre-menu(45deg, #3d1319, #3d1319);
   }
-
-  .menu3 {
-    grid-area: menu3;
-    @include dimensions-menus;
-    @include titre-menu-accueil;
-    background: $color-bg-menu-3;
-    overflow: hidden;
-    justify-self: end;
-    align-self: start;    
-    & h2{
-      font-family: "Bad Script", cursive;
-      @include couleur-titre-menu(160deg, #0023DB, #0889FB 50%);
-    }
-    & h3{
-      font-family: "Bad Script", cursive;
-      @include couleur-menu-menu(#0887FB , #0887FB );
-    }
+  & h3 {
+    font-family: "Satisfy", cursive;
+    @include couleur-menu-menu(#3d1319, #3d1319);
   }
+}
 
-  .menu4 {
-    grid-area: menu4;
-    background: $color-bg-menu-4;
-    @include dimensions-menus;
-    @include titre-menu-accueil;
-    overflow: hidden;
-    justify-self: start;
-    align-self: start;
-    &  h2 {
-      font-family: "Kaushan Script", cursive;
-      @include couleur-titre-menu(45deg, #3E923A, #BEFF7F 75%);
-    }
-    & h3{
-      font-family: "Kaushan Script", cursive;
-      @include couleur-menu-menu(#72BF56, #72BF56);
-    }
+.menu2 {
+  grid-area: menu2;
+  background: $color-bg-menu-2;
+  @include dimensions-menus;
+  @include titre-menu-accueil;
+  overflow: hidden;
+  justify-self: start;
+  align-self: end;
+  & h2 {
+    font-family: "DM Serif Display", serif;
+    @include couleur-titre-menu(160deg, #e0881d 5%, #8f5aff 80%);
   }
+  & h3 {
+    font-family: "DM Serif Display", serif;
+    @include couleur-menu-menu(#c77412, #c77412);
+  }
+}
 
+.menu3 {
+  grid-area: menu3;
+  @include dimensions-menus;
+  @include titre-menu-accueil;
+  background: $color-bg-menu-3;
+  overflow: hidden;
+  justify-self: end;
+  align-self: start;
+  & h2 {
+    font-family: "Bad Script", cursive;
+    @include couleur-titre-menu(160deg, #0023db, #0889fb 50%);
+  }
+  & h3 {
+    font-family: "Bad Script", cursive;
+    @include couleur-menu-menu(#0887fb, #0887fb);
+  }
+}
 
+.menu4 {
+  grid-area: menu4;
+  background: $color-bg-menu-4;
+  @include dimensions-menus;
+  @include titre-menu-accueil;
+  overflow: hidden;
+  justify-self: start;
+  align-self: start;
+  & h2 {
+    font-family: "Kaushan Script", cursive;
+    @include couleur-titre-menu(45deg, #3e923a, #beff7f 75%);
+  }
+  & h3 {
+    font-family: "Kaushan Script", cursive;
+    @include couleur-menu-menu(#72bf56, #72bf56);
+  }
+}
 
-.prochainement {  
-  grid-area: prochainement; 
-  
+.prochainement {
+  grid-area: prochainement;
   @include btn-prochainement;
   @include anime-pointille;
-
 }
 
-footer {
-  a:link{
-    color:orange;
+// interieur du menu 1 la note enchantée avec les produits et les prix
+.flex-container-menu {
+  display: flex;
+  background:white;
+  width: 100vw;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus-marge{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include smartphone-menu1;   
+}
+
+.trait-menu-miseenpage{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-note-menu1{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+
+.menus-1 {  
+  background: $color-bg-menu-1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  @include tablette-menu1;
+  & h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    flex-basis: 100%;
   }
+  & h3 {
+    font-family: "Satisfy", cursive;
+    font-size: 2.3rem;
+    flex-basis: 100%;
+    text-align: center;    
+  }
+  & a{    
+    background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
+    transparent 5px) no-repeat;
+    background-size: 0 100%; /* largeur hauteur */
+    transition: background-size 0.8s;
+    padding-bottom: 0px;
+  }
+
+  & a:hover{
+    background-size: 100% 100%;
+  } 
+  & a:visited{
+    color: black;
+  } 
   
+  & span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    & p {
+      &:nth-child(1) { /* nom du produit */
+        text-align: left;
+        font-family: "Satisfy", cursive;
+        font-size: 1.5rem;
+      }
+      &:nth-child(2) { /* prix du  produit */
+        text-align: right;
+        font-family: "Satisfy", cursive;
+        font-size: 1.5rem;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+
+.position-btn-retour{
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.retour{
+  @include  btn-retour;
+  & a:visited{
+    color: orange;
+  }  
+}
+
+//fin de la page MENU 1
+
+
+
+footer {
+  a:link {
+    color: orange;
+  }
+
   position: fixed;
   bottom: 0;
   display: flex;
@@ -211,12 +310,11 @@ footer {
   background-color: $color-bg-header-footer;
   width: 100vw;
   height: 80px;
-  & h3 {    
+  & h3 {
     color: $header-color-h1;
-    &:hover{
+    &:hover {
       cursor: pointer;
       @include tremblement;
-  }
+    }
   }
 }
-  

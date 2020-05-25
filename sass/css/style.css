@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
-.prochainement {
+.retour, .prochainement {
   border: 0;
   border-radius: 15px;
   padding: 1rem 2rem;
@@ -135,7 +135,7 @@ header h1 {
   box-shadow: 0px 0px 10px -3px black;
 }
 .menu1 .svg {
-  background-image: linear-gradient(#3D1319, #3D1319);
+  background-image: linear-gradient(#3d1319, #3d1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 25px;
@@ -152,13 +152,13 @@ header h1 {
 }
 .menu1 h2 {
   font-family: "Satisfy", cursive;
-  background-image: linear-gradient(45deg, #3D1319, #3D1319);
+  background-image: linear-gradient(45deg, #3d1319, #3d1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu1 h3 {
   font-family: "Satisfy", cursive;
-  background-image: linear-gradient(#3D1319, #3D1319);
+  background-image: linear-gradient(#3d1319, #3d1319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -184,13 +184,13 @@ header h1 {
 }
 .menu2 h2 {
   font-family: "DM Serif Display", serif;
-  background-image: linear-gradient(160deg, #E0881D 5%, #8F5AFF 80%);
+  background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu2 h3 {
   font-family: "DM Serif Display", serif;
-  background-image: linear-gradient(#C77412, #C77412);
+  background-image: linear-gradient(#c77412, #c77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -216,13 +216,13 @@ header h1 {
 }
 .menu3 h2 {
   font-family: "Bad Script", cursive;
-  background-image: linear-gradient(160deg, #0023DB, #0889FB 50%);
+  background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu3 h3 {
   font-family: "Bad Script", cursive;
-  background-image: linear-gradient(#0887FB, #0887FB);
+  background-image: linear-gradient(#0887fb, #0887fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -248,13 +248,13 @@ header h1 {
 }
 .menu4 h2 {
   font-family: "Kaushan Script", cursive;
-  background-image: linear-gradient(45deg, #3E923A, #BEFF7F 75%);
+  background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu4 h3 {
   font-family: "Kaushan Script", cursive;
-  background-image: linear-gradient(#72BF56, #72BF56);
+  background-image: linear-gradient(#72bf56, #72bf56);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -272,6 +272,115 @@ header h1 {
 }
 .prochainement .btn-span:nth-child(3) {
   animation-delay: 0.2s;
+}
+
+.flex-container-menu {
+  display: flex;
+  background: white;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus-marge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-marge {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.trait-menu-miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-note-menu1 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.menus-1 {
+  background: #FCDFDB;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+@media only screen and (max-width: 877px) {
+  .menus-1 {
+    width: 100%;
+  }
+}
+.menus-1 h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  flex-basis: 100%;
+}
+.menus-1 h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 2.3rem;
+  flex-basis: 100%;
+  text-align: center;
+}
+.menus-1 a {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  /* largeur hauteur */
+  transition: background-size 0.8s;
+  padding-bottom: 0px;
+}
+.menus-1 a:hover {
+  background-size: 100% 100%;
+}
+.menus-1 a:visited {
+  color: black;
+}
+.menus-1 span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menus-1 span p:nth-child(1) {
+  /* nom du produit */
+  text-align: left;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+.menus-1 span p:nth-child(2) {
+  /* prix du  produit */
+  text-align: right;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.position-btn-retour {
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.retour a:visited {
+  color: orange;
 }
 
 footer {

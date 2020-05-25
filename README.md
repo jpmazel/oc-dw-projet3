@@ -4,7 +4,7 @@ Openclassrooms - Developpeur Web - Projet 3 : Dynamisez une page web avec des na
 # 🔨 Used in this project
 
 * HTML5
-* CSS3 (Grid layout, flexbox)
+* CSS3 (Grid layout, flexbox, CSS animation)
 * SASS
 
 * Lien Projet3 (https://jpmazel.github.io/oc-dw-projet3/projet-3-ohmyfood.html)

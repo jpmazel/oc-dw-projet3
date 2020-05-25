@@ -54,7 +54,7 @@
   // display: block;
 }
   }
-  
+  //page d' accueil
 @mixin smarphone-cell{
   @media only screen and (max-width: $smartphone){
   justify-self: center;
@@ -69,6 +69,19 @@
 }
   
 
+//page menu 1
+@mixin tablette-menu1{
+  @media only screen and (max-width: 877px){
+    width: 100%;
+  }
+}
 
-
+@mixin smartphone-menu1{
+  @media only screen and (max-width: $smartphone){ 
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  }
+}
 

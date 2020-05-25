@@ -17,3 +17,7 @@
   @extend %btn;
 }
 
+@mixin btn-retour{
+  @extend %btn;
+}
+
