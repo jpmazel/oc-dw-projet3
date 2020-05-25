@@ -360,19 +360,19 @@ header h1 {
 .menus-1 a:visited {
   color: black;
 }
-.menus-1 span {
+.menus-1 .produit-prix {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.menus-1 span p:nth-child(1) {
+.menus-1 .produit-prix p:nth-child(1) {
   /* nom du produit */
   text-align: left;
   font-family: "Satisfy", cursive;
   font-size: 1.5rem;
 }
-.menus-1 span p:nth-child(2) {
+.menus-1 .produit-prix p:nth-child(2) {
   /* prix du  produit */
   text-align: right;
   font-family: "Satisfy", cursive;
