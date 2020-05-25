@@ -49,33 +49,45 @@ header {
   grid-template-areas:
     "menu1 menu2"
     "menu3 menu4"
-    "prochainement prochainement";
+    "prochainement prochainement"
+    ;
   gap: 20px;
-
   justify-items: center;
   align-items: center;
+
+ @include smartphone-grid;  
 }
 
 .postion-grille-menu-1{
   justify-self: end;
    align-self: end;
+   @include smarphone-cell;
 }
 
 .postion-grille-menu-2{
   justify-self: start;
    align-self: end;
+   @include smarphone-cell;
 }
 
 .postion-grille-menu-3{
   justify-self: end;
    align-self: end;
+   @include smarphone-cell;
 }
 
 .postion-grille-menu-4{
   justify-self: start;
    align-self: start;
+   @include smarphone-cell;
 }
 
+.postion-grille-menu-prochainement{
+  
+  
+  
+  // @include smarphone-cell-prochainement;
+}
 
 
 .text-menu-zoom{
@@ -178,9 +190,9 @@ header {
 
 
 
-.prochainement {
-  // grid-column: 1 / 3;
-  grid-area: prochainement;
+.prochainement {  
+  grid-area: prochainement; 
+  
   @include btn-prochainement;
   @include anime-pointille;
 
@@ -194,14 +206,12 @@ footer {
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: $color-bg-header-footer;
   width: 100vw;
   height: 80px;
-  & h3 {
-    margin-left: 6rem;
-    margin-right: 6rem;
+  & h3 {    
     color: $header-color-h1;
     &:hover{
       cursor: pointer;

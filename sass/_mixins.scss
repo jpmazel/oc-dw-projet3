@@ -36,6 +36,39 @@
       -webkit-text-fill-color: transparent; //support partiel
 }
 
+@mixin smartphone-grid{
+  @media only screen and (max-width: $smartphone){
+  grid-template-columns: 100%;
+  grid-template-rows: 23rem 22rem 23rem 23rem 10rem; //22rem 350px
+  grid-template-areas:
+    "menu1"
+    "menu2"
+    "menu3"
+    "menu4"
+    "prochainement" 
+    "prochainement";
+  gap: 5px;
+
+  justify-items: center;
+  align-items: start;
+  // display: block;
+}
+  }
+  
+@mixin smarphone-cell{
+  @media only screen and (max-width: $smartphone){
+  justify-self: center;
+  align-self: center;
+}
+}
+@mixin smarphone-cell-prochainement{
+  @media only screen and (max-width: $smartphone){
+  justify-self: center;
+  align-self: start;
+}
+}
+  
+
 
 
 
