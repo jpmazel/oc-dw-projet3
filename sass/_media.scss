@@ -1,25 +1,80 @@
-@mixin xs {
-  @media only screen and (max-width: 700px) {
-    @content;
+@mixin smartphone-grid {
+  @media only screen and (max-width: $smartphone) {
+    grid-template-columns: 100%;
+    grid-template-rows: 23rem 22rem 23rem 23rem 10rem; //22rem 350px
+    grid-template-areas:
+      "menu1"
+      "menu2"
+      "menu3"
+      "menu4"
+      "prochainement"
+      "prochainement";
+    gap: 5px;
+
+    justify-items: center;
+    align-items: start;
+    // display: block;
   }
 }
 
-@mixin xl {
-  @media only screen and (min-width: 1000px) {
-    @content;
+//page menu 1 et les autres
+
+@mixin mise-en-page-text-ds-menu {
+  & p {
+    &:nth-child(1) {
+      /* nom du produit */
+      text-align: left;
+      font-family: "Satisfy", cursive;
+      font-size: 1.5rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    &:nth-child(2) {
+      /* prix du  produit */
+      text-align: right;
+      font-family: "Satisfy", cursive;
+      font-size: 1.5rem;
+      padding-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
   }
 }
 
-@mixin responsive($device) {
-  @if $device == xs {
-    @include xs{
-      @content;
-    }
+//page d' accueil
+@mixin smarphone-cell {
+  @media only screen and (max-width: $smartphone) {
+    justify-self: center;
+    align-self: center;
   }
-  @if $device == xl{
-    @include xl {
-      @content;
-    }
+}
+@mixin smarphone-cell-prochainement {
+  @media only screen and (max-width: $smartphone) {
+    justify-self: center;
+    align-self: start;
   }
-  
+}
+
+//page menu 1
+@mixin tablette-menu1 {
+  @media only screen and (max-width: 877px) {
+    width: 100%;
+  }
+}
+
+@mixin smartphone-menu1 {
+  @media only screen and (max-width: $smartphone) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@mixin smartphone-menu-h2{
+  font-size: 2.5rem;
+}
+
+@mixin smartphone-menu-h3{
+  font-size: 1.6rem;
 }

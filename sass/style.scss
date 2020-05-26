@@ -366,13 +366,14 @@ header {
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #e0881d 5%, #8f5aff 80%);
+    @include smartphone-menu-h2;
   }
   & h3 {
     font-family: "Satisfy", cursive;
     font-size: 2.3rem;
     flex-basis: 100%;
     text-align: center;
-           
+    @include smartphone-menu-h3;      
     }
   
   & .titre-couleur-1 {  
@@ -508,13 +509,14 @@ header {
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #000000 5%, #000000 80%);
+    @include smartphone-menu-h2;
   }
   & h3 {
     font-family: "Bad Script", cursive;
     font-size: 2.3rem;
     flex-basis: 100%;
     text-align: center;
-           
+    @include  smartphone-menu-h3 ;     
     }
   
   & .titre-couleur-1 {  

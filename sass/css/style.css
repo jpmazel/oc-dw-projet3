@@ -478,12 +478,14 @@ header h1 {
   background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 .menus-2 h3 {
   font-family: "Satisfy", cursive;
   font-size: 2.3rem;
   flex-basis: 100%;
   text-align: center;
+  font-size: 1.6rem;
 }
 .menus-2 .titre-couleur-1 {
   color: #C67412;
@@ -670,12 +672,14 @@ header h1 {
   background-image: linear-gradient(160deg, #000000 5%, #000000 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 .menus-3 h3 {
   font-family: "Bad Script", cursive;
   font-size: 2.3rem;
   flex-basis: 100%;
   text-align: center;
+  font-size: 1.6rem;
 }
 .menus-3 .titre-couleur-1 {
   color: #000000;
