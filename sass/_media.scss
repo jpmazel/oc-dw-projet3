@@ -71,10 +71,20 @@
   }
 }
 
-@mixin smartphone-menu-h2{
-  font-size: 2.5rem;
+@mixin smartphone-mentionLegales{
+  @media only screen and (max-width: $smartphone) {
+    width: 95%;       
+  }
 }
 
-@mixin smartphone-menu-h3{
-  font-size: 1.6rem;
+@mixin smartphone-menu-h2 {
+  @media only screen and (max-width: $smartphone) {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin smartphone-menu-h3 {
+  @media only screen and (max-width: $smartphone) {
+    font-size: 1.6rem;
+  }
 }

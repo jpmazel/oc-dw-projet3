@@ -21,7 +21,6 @@
 }
 
 //les points de suspensions animations
-
 @mixin anime-pointille {
   .btn-span {
     animation: pointille 1.7s ease-in-out infinite both;
@@ -47,7 +46,6 @@
     opacity: 1;
   }
 }
-
 
 //animation souslignement titre
 @mixin souslignement{

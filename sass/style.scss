@@ -10,25 +10,24 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  & a{
+  & a {
     color: $header-color-h1;
   }
-  & a:visited{
+  & a:visited {
     color: $header-color-h1;
-  } 
-  & a:active{
-    color:$header-color-h1;
-  } 
+  }
+  & a:active {
+    color: $header-color-h1;
+  }
 }
 
-
-body {  
+body {
   position: relative;
   background: whitesmoke;
 }
 
 .container_general {
- width: 100%;
+  width: 100%;
 }
 
 header {
@@ -56,7 +55,6 @@ header {
   gap: 20px;
   justify-items: center;
   align-items: center;
-
   @include smartphone-grid;
 }
 
@@ -84,10 +82,6 @@ header {
   @include smarphone-cell;
 }
 
-.postion-grille-menu-prochainement {
-  // @include smarphone-cell-prochainement;
-}
-
 .text-menu-zoom {
   width: 100%;
   height: 100%;
@@ -101,9 +95,8 @@ header {
   @include text-menu-zoom;
 }
 
-
-.menu1 {  
-  & img{
+.menu1 {
+  & img {
     height: 130px;
   }
   grid-area: menu1;
@@ -184,14 +177,14 @@ header {
 // interieur du menu 1 la note enchantée avec les produits et les prix
 .flex-container-menu {
   display: flex;
-  background:white;
+  background: white;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menus-marge{
+.menus-marge {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -200,30 +193,30 @@ header {
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  @include smartphone-menu1;   
+  @include smartphone-menu1;
 }
 
-.trait-menu-miseenpage{
-  width: 100%;  
+.trait-menu-miseenpage {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & img{
+  & img {
     min-width: 25%;
-  }  
-  }  
+  }
+}
 
-.center-note-menu1{
+.center-note-menu1 {
   width: 100%;
   display: block;
   text-align: center;
-  & img{
+  & img {
     width: 130px;
   }
 }
 
-.menus-1 {  
+.menus-1 {
   background: $color-bg-menu-1;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -239,99 +232,102 @@ header {
     font-family: "Satisfy", cursive;
     font-size: 2.3rem;
     flex-basis: 100%;
-    text-align: center;    
+    text-align: center;
   }
-  & a{  
-    color: black;  
-    background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
-    transparent 5px) no-repeat;
+  & a {
+    color: black;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 4px,
+        transparent 5px
+      )
+      no-repeat;
     background-size: 0 100%; /* largeur hauteur */
     transition: background-size 0.8s;
     padding-bottom: 0px;
   }
 
-  & a:hover{
+  & a:hover {
     background-size: 100% 100%;
-  } 
-  & a:visited{
+  }
+  & a:visited {
     color: black;
-  } 
-  
+  }
+
   & .produit-prix {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    
+
     & p {
-      &:nth-child(1) { /* nom du produit */
+      &:nth-child(1) {
+        /* nom du produit */
         text-align: left;
         font-family: "Satisfy", cursive;
         font-size: 1.5rem;
         margin-top: 5px;
         margin-bottom: 5px;
       }
-      &:nth-child(2) { /* prix du  produit */
+      &:nth-child(2) {
+        /* prix du  produit */
         text-align: right;
         font-family: "Satisfy", cursive;
         font-size: 1.5rem;
         padding-left: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
-        // align-self: center;
       }
     }
   }
 }
 
-.noteMusiqueBasPage{
+.noteMusiqueBasPage {
   margin-top: 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  & img{
+  & img {
     width: 50px;
   }
-  & p{
-    color:black;
+  & p {
+    color: black;
     font-family: "Satisfy", cursive;
     font-size: 2rem;
     margin-left: 2rem;
-    
-
   }
 }
 
-.position-btn-retour{
+.position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.retour{
-  @include  btn-retour;
-  & a{
+.retour {
+  @include btn-retour;
+  & a {
     color: $header-color-h1;
   }
-  & a:visited{
+  & a:visited {
     color: $header-color-h1;
-  }  
+  }
 }
-
 //fin de la page MENU 1
 
 //Intérieur du MENU 2 - Le chic à la française
 .flex-container-menu {
   display: flex;
-  background:white;
+  background: white;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menus-marge{
+.menus-marge {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -340,30 +336,28 @@ header {
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  @include smartphone-menu1;   
+  @include smartphone-menu1;
 }
 
-.trait-menu-miseenpage{
-  width: 100%;  
+.trait-menu-miseenpage {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & img{
+  & img {
     min-width: 25%;
-  }  
-  }  
+  }
+}
 
-.center-note-menu1{
+.center-note-menu1 {
   width: 100%;
   display: block;
   text-align: center;
 }
 
-
-
-.menus-2 {  
-  background: #FFF5FE;
+.menus-2 {
+  background: #fff5fe;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -381,50 +375,45 @@ header {
     font-size: 2.3rem;
     flex-basis: 100%;
     text-align: center;
-    @include smartphone-menu-h3;      
-    }
-  
-  & .titre-couleur-1 {  
-    color: #C67412;  
-    // background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
-    // transparent 5px) no-repeat;
-    // background-size: 0 100%; /* largeur hauteur */
-    // transition: background-size 0.8s;
-    // padding-bottom: 0px;
+    @include smartphone-menu-h3;
+  }
+
+  & .titre-couleur-1 {
+    color: #c67412;
     @include souslignement;
   }
 
-  & .titre-couleur-2 {  
-    color:#A56799; 
+  & .titre-couleur-2 {
+    color: #a56799;
     @include souslignement;
   }
 
-  & .titre-couleur-3 {  
-    color: #6E4CCC; 
+  & .titre-couleur-3 {
+    color: #6e4ccc;
     @include souslignement;
   }
 
-  & a:hover{
+  & a:hover {
     background-size: 100% 100%;
-  } 
-  & .titre-couleur-1:visited{
-    color: #C67412;
-  } 
+  }
+  & .titre-couleur-1:visited {
+    color: #c67412;
+  }
 
-  & .titre-couleur-2:visited{
-    color:#A56799;
-  } 
+  & .titre-couleur-2:visited {
+    color: #a56799;
+  }
 
-  & .titre-couleur-3:visited{
-    color: #6E4CCC;
-  } 
-  
+  & .titre-couleur-3:visited {
+    color: #6e4ccc;
+  }
+
   & .produit-prix-1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#C67412;        
+    color: #c67412;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -433,7 +422,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#A56799;        
+    color: #a56799;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -442,46 +431,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#6E4CCC;        
+    color: #6e4ccc;
     @include mise-en-page-text-ds-menu;
   }
 }
 
-#titre-contenu-repas-debut{
+#titre-contenu-repas-debut {
   color: red;
-}  
+}
 
-.position-btn-retour{
+.position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.retour{
-  @include  btn-retour;
-  & a{
+.retour {
+  @include btn-retour;
+  & a {
     color: $header-color-h1;
   }
-  & a:visited{
+  & a:visited {
     color: $header-color-h1;
-  }  
+  }
 }
-
 //Fin de la page MENU 2
-
-
 
 //Intérieur du MENU 3 - Le délice des papilles
 .flex-container-menu {
   display: flex;
-  background:white;
+  background: white;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menus-marge{
+.menus-marge {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -490,23 +476,22 @@ header {
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  @include smartphone-menu1;   
+  @include smartphone-menu1;
 }
 
-.trait-menu-miseenpage{
-  width: 100%;  
+.trait-menu-miseenpage {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & img{
+  & img {
     min-width: 25%;
-  }  
-  }  
+  }
+}
 
-
-.menus-3 {  
-  background: #EBEBEB;
+.menus-3 {
+  background: #ebebeb;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -524,50 +509,45 @@ header {
     font-size: 2.3rem;
     flex-basis: 100%;
     text-align: center;
-    @include  smartphone-menu-h3 ;     
-    }
-  
-  & .titre-couleur-1 {  
-    color: #000000;  
-    // background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
-    // transparent 5px) no-repeat;
-    // background-size: 0 100%; /* largeur hauteur */
-    // transition: background-size 0.8s;
-    // padding-bottom: 0px;
+    @include smartphone-menu-h3;
+  }
+
+  & .titre-couleur-1 {
+    color: #000000;
     @include souslignement;
   }
 
-  & .titre-couleur-2 {  
-    color:#000000; 
+  & .titre-couleur-2 {
+    color: #000000;
     @include souslignement;
   }
 
-  & .titre-couleur-3 {  
-    color: #000000; 
+  & .titre-couleur-3 {
+    color: #000000;
     @include souslignement;
   }
 
-  & a:hover{
+  & a:hover {
     background-size: 100% 100%;
-  } 
-  & .titre-couleur-1:visited{
+  }
+  & .titre-couleur-1:visited {
     color: #000000;
-  } 
+  }
 
-  & .titre-couleur-2:visited{
-    color:#000000;
-  } 
-
-  & .titre-couleur-3:visited{
+  & .titre-couleur-2:visited {
     color: #000000;
-  } 
-  
+  }
+
+  & .titre-couleur-3:visited {
+    color: #000000;
+  }
+
   & .produit-prix-1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -576,7 +556,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -585,45 +565,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 }
 
-#titre-contenu-repas-debut{
-  color: red;
-}  
-
-.position-btn-retour{
+.position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.retour{
-  @include  btn-retour;
-  & a{
+.retour {
+  @include btn-retour;
+  & a {
     color: $header-color-h1;
   }
-  & a:visited{
+  & a:visited {
     color: $header-color-h1;
-  }  
+  }
 }
-
 //Fin de la page MENU 3
-
 
 //Intérieur du MENU 4 - La palette du gout
 .flex-container-menu {
   display: flex;
-  background:white;
+  background: white;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menus-marge{
+.menus-marge {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -632,23 +606,22 @@ header {
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  @include smartphone-menu1;   
+  @include smartphone-menu1;
 }
 
-.trait-menu-miseenpage{
-  width: 100%;  
+.trait-menu-miseenpage {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & img{
+  & img {
     min-width: 25%;
-  }  
-  }  
+  }
+}
 
-
-.menus-4 {  
-  background: #FDFFFD;
+.menus-4 {
+  background: #fdfffd;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -659,56 +632,52 @@ header {
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #3e923a 5%, #beff7f 80%);
+    @include smartphone-menu-h2;
   }
   & h3 {
     font-family: "Kaushan Script", cursive;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     flex-basis: 100%;
     text-align: center;
-           
-    }
-  
-  & .titre-couleur-1 {  
-    color: #000000;  
-    // background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
-    // transparent 5px) no-repeat;
-    // background-size: 0 100%; /* largeur hauteur */
-    // transition: background-size 0.8s;
-    // padding-bottom: 0px;
+    @include smartphone-menu-h3;
+  }
+
+  & .titre-couleur-1 {
+    color: #000000;
     @include souslignement;
   }
 
-  & .titre-couleur-2 {  
-    color:#000000; 
+  & .titre-couleur-2 {
+    color: #000000;
     @include souslignement;
   }
 
-  & .titre-couleur-3 {  
-    color: #000000; 
+  & .titre-couleur-3 {
+    color: #000000;
     @include souslignement;
   }
 
-  & a:hover{
+  & a:hover {
     background-size: 100% 100%;
-  } 
-  & .titre-couleur-1:visited{
+  }
+  & .titre-couleur-1:visited {
     color: #000000;
-  } 
+  }
 
-  & .titre-couleur-2:visited{
-    color:#000000;
-  } 
-
-  & .titre-couleur-3:visited{
+  & .titre-couleur-2:visited {
     color: #000000;
-  } 
-  
+  }
+
+  & .titre-couleur-3:visited {
+    color: #000000;
+  }
+
   & .produit-prix-1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -717,7 +686,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 
@@ -726,62 +695,50 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color:#000000;        
+    color: #000000;
     @include mise-en-page-text-ds-menu;
   }
 }
 
-#titre-contenu-repas-debut{
-  color: red;
-}  
-
-.position-btn-retour{
+.position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.retour{
-  @include  btn-retour;
-  & a{
+.retour {
+  @include btn-retour;
+  & a {
     color: $header-color-h1;
   }
-  & a:visited{
+  & a:visited {
     color: $header-color-h1;
-  }  
+  }
 }
-
 //Fin de la page MENU 4
 
 //début mention LEGALE
-.container-centrer{
-  
+.container-centrer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-  
-  .mentionLegales{
-    width: 80%;
-    & h1{
-      text-align: center;
-      margin-top: 2rem;
-    }
-    & p{
-      margin-top: 1rem;
-      font-size: 1.5rem;
-    }
-    
+
+.mentionLegales {
+  width: 80%;
+  @include smartphone-mentionLegales;
+  & h1 {
+    text-align: center;
+    margin-top: 2rem;
   }
-
+  & p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
   
-
-
-
-
+}
 //fin mention légale
-
 
 footer {
   a:link {

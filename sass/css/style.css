@@ -469,7 +469,7 @@ header h1 {
 }
 
 .menus-2 {
-  background: #FFF5FE;
+  background: #fff5fe;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -487,17 +487,25 @@ header h1 {
   background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-2 h2 {
+    font-size: 2.5rem;
+  }
 }
 .menus-2 h3 {
   font-family: "Satisfy", cursive;
   font-size: 2.3rem;
   flex-basis: 100%;
   text-align: center;
-  font-size: 1.6rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-2 h3 {
+    font-size: 1.6rem;
+  }
 }
 .menus-2 .titre-couleur-1 {
-  color: #C67412;
+  color: #c67412;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
   background-size: 0 100%;
   /* largeur hauteur */
@@ -505,7 +513,7 @@ header h1 {
   padding-bottom: 0px;
 }
 .menus-2 .titre-couleur-2 {
-  color: #A56799;
+  color: #a56799;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
   background-size: 0 100%;
   /* largeur hauteur */
@@ -513,7 +521,7 @@ header h1 {
   padding-bottom: 0px;
 }
 .menus-2 .titre-couleur-3 {
-  color: #6E4CCC;
+  color: #6e4ccc;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
   background-size: 0 100%;
   /* largeur hauteur */
@@ -524,20 +532,20 @@ header h1 {
   background-size: 100% 100%;
 }
 .menus-2 .titre-couleur-1:visited {
-  color: #C67412;
+  color: #c67412;
 }
 .menus-2 .titre-couleur-2:visited {
-  color: #A56799;
+  color: #a56799;
 }
 .menus-2 .titre-couleur-3:visited {
-  color: #6E4CCC;
+  color: #6e4ccc;
 }
 .menus-2 .produit-prix-1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #C67412;
+  color: #c67412;
 }
 .menus-2 .produit-prix-1 p:nth-child(1) {
   /* nom du produit */
@@ -561,7 +569,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #A56799;
+  color: #a56799;
 }
 .menus-2 .produit-prix-2 p:nth-child(1) {
   /* nom du produit */
@@ -585,7 +593,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #6E4CCC;
+  color: #6e4ccc;
 }
 .menus-2 .produit-prix-3 p:nth-child(1) {
   /* nom du produit */
@@ -663,7 +671,7 @@ header h1 {
 }
 
 .menus-3 {
-  background: #EBEBEB;
+  background: #ebebeb;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -681,14 +689,22 @@ header h1 {
   background-image: linear-gradient(160deg, #000000 5%, #000000 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-3 h2 {
+    font-size: 2.5rem;
+  }
 }
 .menus-3 h3 {
   font-family: "Bad Script", cursive;
   font-size: 2.3rem;
   flex-basis: 100%;
   text-align: center;
-  font-size: 1.6rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-3 h3 {
+    font-size: 1.6rem;
+  }
 }
 .menus-3 .titre-couleur-1 {
   color: #000000;
@@ -799,10 +815,6 @@ header h1 {
   margin-bottom: 5px;
 }
 
-#titre-contenu-repas-debut {
-  color: red;
-}
-
 .position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
@@ -857,7 +869,7 @@ header h1 {
 }
 
 .menus-4 {
-  background: #FDFFFD;
+  background: #fdfffd;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -876,11 +888,21 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media only screen and (max-width: 750px) {
+  .menus-4 h2 {
+    font-size: 2.5rem;
+  }
+}
 .menus-4 h3 {
   font-family: "Kaushan Script", cursive;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   flex-basis: 100%;
   text-align: center;
+}
+@media only screen and (max-width: 750px) {
+  .menus-4 h3 {
+    font-size: 1.6rem;
+  }
 }
 .menus-4 .titre-couleur-1 {
   color: #000000;
@@ -991,10 +1013,6 @@ header h1 {
   margin-bottom: 5px;
 }
 
-#titre-contenu-repas-debut {
-  color: red;
-}
-
 .position-btn-retour {
   margin-bottom: 120px;
   width: 100%;
@@ -1018,6 +1036,11 @@ header h1 {
 
 .mentionLegales {
   width: 80%;
+}
+@media only screen and (max-width: 750px) {
+  .mentionLegales {
+    width: 95%;
+  }
 }
 .mentionLegales h1 {
   text-align: center;

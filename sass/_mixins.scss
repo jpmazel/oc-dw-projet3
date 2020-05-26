@@ -4,39 +4,32 @@
   box-shadow: 0px 0px 10px -3px black; //x, y , effet de flou, portée du blur
 }
 
-@mixin titre-menu-accueil{
-  
-  h2{    
+@mixin titre-menu-accueil {
+  h2 {
     text-align: center;
     font-size: 2rem;
   }
 
-  h3{
+  h3 {
     text-align: center;
     font-size: 3.5rem;
     text-transform: uppercase;
   }
-    
 }
-@mixin note-de-musique ($d, $f){
+@mixin note-de-musique($d, $f) {
   background-image: linear-gradient($d, $f);
-      -webkit-background-clip: text; //support partiel
-      -webkit-text-fill-color: transparent; //support partiel
+  -webkit-background-clip: text; //support partiel
+  -webkit-text-fill-color: transparent; //support partiel
 }
 
-@mixin couleur-titre-menu ($deg, $d, $f){
+@mixin couleur-titre-menu($deg, $d, $f) {
   background-image: linear-gradient($deg, $d, $f);
-      -webkit-background-clip: text; //support partiel
-      -webkit-text-fill-color: transparent; //support partiel
+  -webkit-background-clip: text; //support partiel
+  -webkit-text-fill-color: transparent; //support partiel
 }
 
-@mixin couleur-menu-menu ($d, $f){
+@mixin couleur-menu-menu($d, $f) {
   background-image: linear-gradient($d, $f);
-      -webkit-background-clip: text; //support partiel
-      -webkit-text-fill-color: transparent; //support partiel
+  -webkit-background-clip: text; //support partiel
+  -webkit-text-fill-color: transparent; //support partiel
 }
-
-
-
-
-
