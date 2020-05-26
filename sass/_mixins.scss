@@ -54,6 +54,38 @@
   // display: block;
 }
   }
+
+//page menu 1 et les autres
+
+@mixin mise-en-page-text-ds-menu{
+  & p {
+    &:nth-child(1) { /* nom du produit */
+      text-align: left;
+      font-family: "Satisfy", cursive;
+      font-size: 1.5rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    &:nth-child(2) { /* prix du  produit */
+      text-align: right;
+      font-family: "Satisfy", cursive;
+      font-size: 1.5rem;
+      padding-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;        
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
   //page d' accueil
 @mixin smarphone-cell{
   @media only screen and (max-width: $smartphone){
@@ -84,4 +116,6 @@
   margin-bottom: 0.5rem;
   }
 }
+
+
 

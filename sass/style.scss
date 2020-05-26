@@ -188,7 +188,6 @@ header {
   display: flex;
   background:white;
   width: 100vw;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -207,8 +206,7 @@ header {
 }
 
 .trait-menu-miseenpage{
-  width: 100%;
-  
+  width: 100%;  
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -223,7 +221,6 @@ header {
   display: block;
   text-align: center;
 }
-
 
 .menus-1 {  
   background: $color-bg-menu-1;
@@ -280,11 +277,11 @@ header {
         padding-left: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
+        // align-self: center;
       }
     }
   }
 }
-
 
 .position-btn-retour{
   margin-bottom: 120px;
@@ -303,6 +300,167 @@ header {
 }
 
 //fin de la page MENU 1
+
+//Intérieur du MENU 2 - Le chic à la française
+.flex-container-menu {
+  display: flex;
+  background:white;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus-marge{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include smartphone-menu1;   
+}
+
+.trait-menu-miseenpage{
+  width: 100%;  
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & img{
+    min-width: 25%;
+  }  
+  }  
+
+.center-note-menu1{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+
+
+.menus-2 {  
+  background: $color-bg-menu-1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  @include tablette-menu1;
+  & h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    flex-basis: 100%;
+    @include couleur-titre-menu(160deg, #e0881d 5%, #8f5aff 80%);
+  }
+  & h3 {
+    font-family: "Satisfy", cursive;
+    font-size: 2.3rem;
+    flex-basis: 100%;
+    text-align: center;
+           
+    }
+  
+  & .titre-couleur-1 {  
+    color: #C67412;  
+    // background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
+    // transparent 5px) no-repeat;
+    // background-size: 0 100%; /* largeur hauteur */
+    // transition: background-size 0.8s;
+    // padding-bottom: 0px;
+    @include souslignement;
+  }
+
+  & .titre-couleur-2 {  
+    color:#A56799; 
+    @include souslignement;
+  }
+
+  & .titre-couleur-3 {  
+    color: #6E4CCC; 
+    @include souslignement;
+  }
+
+  & a:hover{
+    background-size: 100% 100%;
+  } 
+  & .titre-couleur-1:visited{
+    color: #C67412;
+  } 
+
+  & .titre-couleur-2:visited{
+    color:#A56799;
+  } 
+
+  & .titre-couleur-3:visited{
+    color: #6E4CCC;
+  } 
+  
+  & .produit-prix-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:#C67412;        
+    @include mise-en-page-text-ds-menu;
+  }
+
+  & .produit-prix-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:#A56799;        
+    @include mise-en-page-text-ds-menu;
+  }
+
+  & .produit-prix-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:#6E4CCC;        
+    @include mise-en-page-text-ds-menu;
+  }
+}
+
+#titre-contenu-repas-debut{
+  color: red;
+}  
+
+.position-btn-retour{
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.retour{
+  @include  btn-retour;
+  & a{
+    color: $header-color-h1;
+  }
+  & a:visited{
+    color: $header-color-h1;
+  }  
+}
+
+//Fin de la page MENU 2
+
+
+
+//Intérieur du MENU 3 - Le délice des papilles
+
+
+//Fin de la page MENU 3
+
+
+//Intérieur du MENU 4 - La palette du gout
+
+
+//Fin de la page MENU 4
+
 
 
 

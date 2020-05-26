@@ -398,6 +398,204 @@ header h1 {
   color: orange;
 }
 
+.flex-container-menu {
+  display: flex;
+  background: white;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus-marge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 750px) {
+  .menus-marge {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.trait-menu-miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trait-menu-miseenpage img {
+  min-width: 25%;
+}
+
+.center-note-menu1 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.menus-2 {
+  background: #FCDFDB;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+@media only screen and (max-width: 877px) {
+  .menus-2 {
+    width: 100%;
+  }
+}
+.menus-2 h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  flex-basis: 100%;
+  background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus-2 h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 2.3rem;
+  flex-basis: 100%;
+  text-align: center;
+}
+.menus-2 .titre-couleur-1 {
+  color: #C67412;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  /* largeur hauteur */
+  transition: background-size 0.8s;
+  padding-bottom: 0px;
+}
+.menus-2 .titre-couleur-2 {
+  color: #A56799;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  /* largeur hauteur */
+  transition: background-size 0.8s;
+  padding-bottom: 0px;
+}
+.menus-2 .titre-couleur-3 {
+  color: #6E4CCC;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  /* largeur hauteur */
+  transition: background-size 0.8s;
+  padding-bottom: 0px;
+}
+.menus-2 a:hover {
+  background-size: 100% 100%;
+}
+.menus-2 .titre-couleur-1:visited {
+  color: #C67412;
+}
+.menus-2 .titre-couleur-2:visited {
+  color: #A56799;
+}
+.menus-2 .titre-couleur-3:visited {
+  color: #6E4CCC;
+}
+.menus-2 .produit-prix-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #C67412;
+}
+.menus-2 .produit-prix-1 p:nth-child(1) {
+  /* nom du produit */
+  text-align: left;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menus-2 .produit-prix-1 p:nth-child(2) {
+  /* prix du  produit */
+  text-align: right;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menus-2 .produit-prix-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #A56799;
+}
+.menus-2 .produit-prix-2 p:nth-child(1) {
+  /* nom du produit */
+  text-align: left;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menus-2 .produit-prix-2 p:nth-child(2) {
+  /* prix du  produit */
+  text-align: right;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menus-2 .produit-prix-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #6E4CCC;
+}
+.menus-2 .produit-prix-3 p:nth-child(1) {
+  /* nom du produit */
+  text-align: left;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menus-2 .produit-prix-3 p:nth-child(2) {
+  /* prix du  produit */
+  text-align: right;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#titre-contenu-repas-debut {
+  color: red;
+}
+
+.position-btn-retour {
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.retour a {
+  color: orange;
+}
+.retour a:visited {
+  color: orange;
+}
+
 footer {
   position: fixed;
   bottom: 0;
