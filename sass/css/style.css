@@ -28,6 +28,15 @@
   padding: 0;
   text-decoration: none;
 }
+* a {
+  color: orange;
+}
+* a:visited {
+  color: orange;
+}
+* a:active {
+  color: orange;
+}
 
 body {
   position: relative;
@@ -998,6 +1007,25 @@ header h1 {
 }
 .retour a:visited {
   color: orange;
+}
+
+.container-centrer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentionLegales {
+  width: 80%;
+}
+.mentionLegales h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.mentionLegales p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 footer {

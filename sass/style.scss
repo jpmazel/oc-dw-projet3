@@ -10,11 +10,19 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  & a{
+    color: $header-color-h1;
+  }
+  & a:visited{
+    color: $header-color-h1;
+  } 
+  & a:active{
+    color:$header-color-h1;
+  } 
 }
 
 
-body {
-  
+body {  
   position: relative;
   background: whitesmoke;
 }
@@ -745,7 +753,34 @@ header {
 
 //Fin de la page MENU 4
 
+//début mention LEGALE
+.container-centrer{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+  .mentionLegales{
+    width: 80%;
+    & h1{
+      text-align: center;
+      margin-top: 2rem;
+    }
+    & p{
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    
+  }
 
+  
+
+
+
+
+//fin mention légale
 
 
 footer {
