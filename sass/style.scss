@@ -727,6 +727,7 @@ header {
 
 .mentionLegales {
   width: 80%;
+  margin-bottom: 3rem;
   @include smartphone-mentionLegales;
   & h1 {
     text-align: center;
