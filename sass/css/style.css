@@ -13,7 +13,7 @@
 }
 
 @keyframes pointille {
-  0% {
+  5% {
     opacity: 1;
   }
   50% {
@@ -508,7 +508,7 @@ header h1 {
 .menus-2 .titre-couleur-1 {
   color: #c67412;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -516,7 +516,7 @@ header h1 {
 .menus-2 .titre-couleur-2 {
   color: #a56799;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -524,7 +524,7 @@ header h1 {
 .menus-2 .titre-couleur-3 {
   color: #6e4ccc;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -710,7 +710,7 @@ header h1 {
 .menus-3 .titre-couleur-1 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -718,7 +718,7 @@ header h1 {
 .menus-3 .titre-couleur-2 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -726,7 +726,7 @@ header h1 {
 .menus-3 .titre-couleur-3 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -908,7 +908,7 @@ header h1 {
 .menus-4 .titre-couleur-1 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -916,7 +916,7 @@ header h1 {
 .menus-4 .titre-couleur-2 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;
@@ -924,7 +924,7 @@ header h1 {
 .menus-4 .titre-couleur-3 {
   color: #000000;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
+  background-size: 0% 100%;
   /* largeur hauteur */
   transition: background-size 0.8s;
   padding-bottom: 0px;

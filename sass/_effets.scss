@@ -37,7 +37,7 @@
 }
 
 @keyframes pointille {
-  0% {
+  5% {
     opacity: 1;
   }
   50% {
@@ -52,7 +52,7 @@
 @mixin souslignement{
   background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
     transparent 5px) no-repeat;
-    background-size: 0 100%; /* largeur hauteur */
+    background-size: 0% 100%; /* largeur hauteur */
     transition: background-size 0.8s;
     padding-bottom: 0px;
 }
