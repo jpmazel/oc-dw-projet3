@@ -16,7 +16,8 @@
 
 @mixin text-menu-zoom {
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) ;
+    opacity: 0.65;   
   }
 }
 

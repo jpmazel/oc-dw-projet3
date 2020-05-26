@@ -90,7 +90,7 @@ header {
   justify-content: center;
   justify-items: center;
   transform: scale(1);
-  transition-property: transform; //modif ok
+  transition-property: all; //modif ok
   transition-duration: 1s; //modif ok
   @include text-menu-zoom;
 }
