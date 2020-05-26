@@ -92,21 +92,11 @@ header {
   transition-duration: 1s; //modif ok
   @include text-menu-zoom;
 }
-.menu {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-}
 
-.menu1 {
-  // justify-self: end;
-  // align-self: end;
 
-  .svg {
-    @include note-de-musique(#3d1319, #3d1319);
-    padding-bottom: 25px;
-    text-align: center;
+.menu1 {  
+  & img{
+    height: 130px;
   }
   grid-area: menu1;
   background: $color-bg-menu-1;
@@ -220,6 +210,9 @@ header {
   width: 100%;
   display: block;
   text-align: center;
+  & img{
+    width: 130px;
+  }
 }
 
 .menus-1 {  
@@ -230,7 +223,7 @@ header {
   @include tablette-menu1;
   & h2 {
     font-family: "Satisfy", cursive;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
   }
@@ -280,6 +273,25 @@ header {
         // align-self: center;
       }
     }
+  }
+}
+
+.noteMusiqueBasPage{
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img{
+    width: 50px;
+  }
+  & p{
+    color:black;
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+    margin-left: 2rem;
+    
+
   }
 }
 
@@ -343,14 +355,14 @@ header {
 
 
 .menus-2 {  
-  background: $color-bg-menu-1;
+  background: #FFF5FE;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 80%;
   @include tablette-menu1;
   & h2 {
     font-family: "Satisfy", cursive;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #e0881d 5%, #8f5aff 80%);
@@ -492,7 +504,7 @@ header {
   @include tablette-menu1;
   & h2 {
     font-family: "Bad Script", cursive;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #000000 5%, #000000 80%);
@@ -633,7 +645,7 @@ header {
   @include tablette-menu1;
   & h2 {
     font-family: "Kaushan Script", cursive;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
     @include couleur-titre-menu(160deg, #3e923a 5%, #beff7f 80%);
