@@ -59,6 +59,10 @@ header h1 {
   color: orange;
   font-size: 4rem;
 }
+header a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
 .grid_menu {
   display: grid;
@@ -354,6 +358,9 @@ header h1 {
   font-size: 2.3rem;
   flex-basis: 100%;
   text-align: center;
+}
+.menus-1 h3:hover {
+  background-size: 50% 20px;
 }
 .menus-1 a {
   color: black;

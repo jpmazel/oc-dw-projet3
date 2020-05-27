@@ -33,3 +33,10 @@
   -webkit-background-clip: text; //support partiel
   -webkit-text-fill-color: transparent; //support partiel
 }
+
+@mixin opacite-hover-lien{
+    a:hover{
+    opacity: 0.8;
+    transition: .2s;
+  }
+}
