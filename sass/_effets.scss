@@ -48,7 +48,7 @@
   }
 }
 
-//animation souslignement titre
+//animation souslignement titre  (to top
 @mixin souslignement{
   background : linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, 
     transparent 5px) no-repeat;

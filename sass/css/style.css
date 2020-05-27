@@ -359,10 +359,7 @@ header a:hover {
   flex-basis: 100%;
   text-align: center;
 }
-.menus-1 h3:hover {
-  background-size: 50% 20px;
-}
-.menus-1 a {
+.menus-1 span {
   color: black;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 4px, transparent 5px) no-repeat;
   background-size: 0 100%;
@@ -370,7 +367,7 @@ header a:hover {
   transition: background-size 0.8s;
   padding-bottom: 0px;
 }
-.menus-1 a:hover {
+.menus-1 span:hover {
   background-size: 100% 100%;
 }
 .menus-1 a:visited {

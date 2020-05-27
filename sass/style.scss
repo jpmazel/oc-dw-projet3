@@ -205,7 +205,7 @@ header {
   align-items: center;
   & img {
     min-width: 25%;
-  }  
+  }
 }
 
 .center-note-menu1 {
@@ -231,34 +231,28 @@ header {
     flex-basis: 100%;
   }
   & h3 {
-       
     font-family: "Satisfy", cursive;
     font-size: 2.3rem;
     flex-basis: 100%;
     text-align: center;
-    
   }
-
-  & h3:hover{
-    background-size: 50% 20px;
-  }
-
-  & a {
+  & span {
     color: black;
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0.8) 4px,
-        transparent 5px) 
-        no-repeat;
+        transparent 5px
+      )
+      no-repeat;
     background-size: 0 100%; /* largeur hauteur */
     transition: background-size 0.8s;
     padding-bottom: 0px;
   }
-
-  & a:hover {
+  & span:hover {
     background-size: 100% 100%;
   }
+
   & a:visited {
     color: black;
   }
@@ -713,19 +707,16 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 .retour {
   @include btn-retour;
-  
+
   & a {
     color: $header-color-h1;
-    
   }
   & a:visited {
     color: $header-color-h1;
   }
-  
 }
 //Fin de la page MENU 4
 
@@ -749,7 +740,6 @@ header {
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-  
 }
 //fin mention légale
 
