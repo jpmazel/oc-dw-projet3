@@ -373,7 +373,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .menus-1 .produit-prix p:nth-child(1) {
   /* nom du produit */
@@ -545,7 +545,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #c67412;
 }
 .menus-2 .produit-prix-1 p:nth-child(1) {
@@ -569,7 +569,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #a56799;
 }
 .menus-2 .produit-prix-2 p:nth-child(1) {
@@ -593,7 +593,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #6e4ccc;
 }
 .menus-2 .produit-prix-3 p:nth-child(1) {
@@ -747,7 +747,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-3 .produit-prix-1 p:nth-child(1) {
@@ -771,7 +771,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-3 .produit-prix-2 p:nth-child(1) {
@@ -795,7 +795,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-3 .produit-prix-3 p:nth-child(1) {
@@ -945,7 +945,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-4 .produit-prix-1 p:nth-child(1) {
@@ -969,7 +969,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-4 .produit-prix-2 p:nth-child(1) {
@@ -993,7 +993,7 @@ header h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   color: #000000;
 }
 .menus-4 .produit-prix-3 p:nth-child(1) {
