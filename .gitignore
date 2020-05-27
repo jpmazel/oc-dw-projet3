@@ -3,3 +3,4 @@ node_modules
 test.html
 # test* enléve tout fichier ou dossier dont le nom commence par test
 test* 
+.vscode
