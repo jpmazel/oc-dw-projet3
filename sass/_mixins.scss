@@ -16,22 +16,22 @@
     text-transform: uppercase;
   }
 }
-@mixin note-de-musique($d, $f) {
-  background-image: linear-gradient($d, $f);
-  -webkit-background-clip: text; //support partiel
-  -webkit-text-fill-color: transparent; //support partiel
-}
+// @mixin note-de-musique($d, $f) {
+//   background-image: linear-gradient($d, $f);
+//   -webkit-background-clip: text; //support partiel
+//   -webkit-text-fill-color: transparent; //support partiel
+// }
 
 @mixin couleur-titre-menu($deg, $d, $f) {
   background-image: linear-gradient($deg, $d, $f);
   -webkit-background-clip: text; //support partiel
-  -webkit-text-fill-color: transparent; //support partiel
+  color: transparent;  
 }
 
 @mixin couleur-menu-menu($d, $f) {
   background-image: linear-gradient($d, $f);
   -webkit-background-clip: text; //support partiel
-  -webkit-text-fill-color: transparent; //support partiel
+  color: transparent;  
 }
 
 @mixin opacite-hover-lien{

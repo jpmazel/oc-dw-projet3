@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
-.retour, .prochainement {
+.retour, .prochainement-anim {
   border: 0;
   border-radius: 15px;
   padding: 1rem 2rem;
@@ -36,6 +36,9 @@
 }
 * a:active {
   color: orange;
+}
+* i {
+  font-style: normal;
 }
 
 body {
@@ -137,8 +140,9 @@ header a:hover {
   justify-content: center;
   justify-items: center;
   transform: scale(1);
-  transition-property: all;
-  transition-duration: 1s;
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 1s, 1s;
 }
 .text-menu-zoom:hover {
   transform: scale(1.1);
@@ -168,13 +172,13 @@ header a:hover {
   font-family: "Satisfy", cursive;
   background-image: linear-gradient(45deg, #3d1319, #3d1319);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .menu1 h3 {
   font-family: "Satisfy", cursive;
   background-image: linear-gradient(#3d1319, #3d1319);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menu2 {
@@ -200,13 +204,13 @@ header a:hover {
   font-family: "DM Serif Display", serif;
   background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .menu2 h3 {
   font-family: "DM Serif Display", serif;
   background-image: linear-gradient(#c77412, #c77412);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menu3 {
@@ -232,13 +236,13 @@ header a:hover {
   font-family: "Bad Script", cursive;
   background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .menu3 h3 {
   font-family: "Bad Script", cursive;
   background-image: linear-gradient(#0887fb, #0887fb);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menu4 {
@@ -264,27 +268,27 @@ header a:hover {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .menu4 h3 {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(#72bf56, #72bf56);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
-.prochainement {
+.prochainement-anim {
   grid-area: prochainement;
 }
-.prochainement .btn-span {
+.prochainement-anim .btn-span {
   animation: pointille 1.7s ease-in-out infinite both;
   opacity: 1;
   font-size: 2rem;
 }
-.prochainement .btn-span:nth-child(2) {
+.prochainement-anim .btn-span:nth-child(2) {
   animation-delay: 0.2s;
 }
-.prochainement .btn-span:nth-child(3) {
+.prochainement-anim .btn-span:nth-child(3) {
   animation-delay: 0.2s;
 }
 
@@ -421,6 +425,14 @@ header a:hover {
   justify-content: center;
 }
 
+.retour:hover {
+  opacity: 0.8;
+}
+
+.retour {
+  transition-property: opacity;
+  transition-duration: 1s;
+}
 .retour a {
   color: orange;
 }
@@ -491,7 +503,7 @@ header a:hover {
   flex-basis: 100%;
   background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 @media only screen and (max-width: 750px) {
   .menus-2 h2 {
@@ -533,17 +545,8 @@ header a:hover {
   transition: background-size 0.8s;
   padding-bottom: 0px;
 }
-.menus-2 a:hover {
+.menus-2 span:hover {
   background-size: 100% 100%;
-}
-.menus-2 .titre-couleur-1:visited {
-  color: #c67412;
-}
-.menus-2 .titre-couleur-2:visited {
-  color: #a56799;
-}
-.menus-2 .titre-couleur-3:visited {
-  color: #6e4ccc;
 }
 .menus-2 .produit-prix-1 {
   width: 100%;
@@ -693,7 +696,7 @@ header a:hover {
   flex-basis: 100%;
   background-image: linear-gradient(160deg, #000000 5%, #000000 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 @media only screen and (max-width: 750px) {
   .menus-3 h2 {
@@ -735,17 +738,8 @@ header a:hover {
   transition: background-size 0.8s;
   padding-bottom: 0px;
 }
-.menus-3 a:hover {
+.menus-3 span:hover {
   background-size: 100% 100%;
-}
-.menus-3 .titre-couleur-1:visited {
-  color: #000000;
-}
-.menus-3 .titre-couleur-2:visited {
-  color: #000000;
-}
-.menus-3 .titre-couleur-3:visited {
-  color: #000000;
 }
 .menus-3 .produit-prix-1 {
   width: 100%;
@@ -891,7 +885,7 @@ header a:hover {
   flex-basis: 100%;
   background-image: linear-gradient(160deg, #3e923a 5%, #beff7f 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 @media only screen and (max-width: 750px) {
   .menus-4 h2 {
@@ -933,17 +927,8 @@ header a:hover {
   transition: background-size 0.8s;
   padding-bottom: 0px;
 }
-.menus-4 a:hover {
+.menus-4 span:hover {
   background-size: 100% 100%;
-}
-.menus-4 .titre-couleur-1:visited {
-  color: #000000;
-}
-.menus-4 .titre-couleur-2:visited {
-  color: #000000;
-}
-.menus-4 .titre-couleur-3:visited {
-  color: #000000;
 }
 .menus-4 .produit-prix-1 {
   width: 100%;

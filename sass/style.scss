@@ -19,6 +19,9 @@
   & a:active {
     color: $header-color-h1;
   }
+  i {
+    font-style: normal;
+  }
 }
 
 body {
@@ -91,8 +94,10 @@ header {
   justify-content: center;
   justify-items: center;
   transform: scale(1);
-  transition-property: all; //modif ok
-  transition-duration: 1s; //modif ok
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 1s, 1s;
+  // transition: transform 1s, opacity 1s;
   @include text-menu-zoom;
 }
 
@@ -169,13 +174,14 @@ header {
   }
 }
 
-.prochainement {
+.prochainement-anim {
   grid-area: prochainement;
   @include btn-prochainement;
   @include anime-pointille;
 }
+//FIN de la page d'accueil et de ses 4 menus-------------------------------------------------------
 
-// interieur du menu 1 la note enchantée avec les produits et les prix
+// interieur du menu 1 la note enchantée avec les produits et les prix-----------------
 .flex-container-menu {
   display: flex;
   background: white;
@@ -308,8 +314,15 @@ header {
   display: flex;
   justify-content: center;
 }
+
+.retour:hover {
+  opacity: 0.8;
+}
 .retour {
+  transition-property: opacity;
+  transition-duration: 1s;
   @include btn-retour;
+
   & a {
     color: $header-color-h1;
   }
@@ -317,9 +330,9 @@ header {
     color: $header-color-h1;
   }
 }
-//fin de la page MENU 1
+//fin de la page MENU 1-------------------------------------------------------------------
 
-//Intérieur du MENU 2 - Le chic à la française
+//Intérieur du MENU 2 - Le chic à la française--------------------------------------------
 .flex-container-menu {
   display: flex;
   background: white;
@@ -395,19 +408,9 @@ header {
     @include souslignement;
   }
 
-  & a:hover {
+  & span:hover {
+    // déclenche le soulignement au passage de la souris
     background-size: 100% 100%;
-  }
-  & .titre-couleur-1:visited {
-    color: #c67412;
-  }
-
-  & .titre-couleur-2:visited {
-    color: #a56799;
-  }
-
-  & .titre-couleur-3:visited {
-    color: #6e4ccc;
   }
 
   & .produit-prix-1 {
@@ -457,9 +460,9 @@ header {
     color: $header-color-h1;
   }
 }
-//Fin de la page MENU 2
+//Fin de la page MENU 2-------------------------------------------------------------------
 
-//Intérieur du MENU 3 - Le délice des papilles
+//Intérieur du MENU 3 - Le délice des papilles--------------------------------------------
 .flex-container-menu {
   display: flex;
   background: white;
@@ -529,19 +532,8 @@ header {
     @include souslignement;
   }
 
-  & a:hover {
+  & span:hover {
     background-size: 100% 100%;
-  }
-  & .titre-couleur-1:visited {
-    color: #000000;
-  }
-
-  & .titre-couleur-2:visited {
-    color: #000000;
-  }
-
-  & .titre-couleur-3:visited {
-    color: #000000;
   }
 
   & .produit-prix-1 {
@@ -587,9 +579,9 @@ header {
     color: $header-color-h1;
   }
 }
-//Fin de la page MENU 3
+//Fin de la page MENU 3--------------------------------------------------------------------
 
-//Intérieur du MENU 4 - La palette du gout
+//Intérieur du MENU 4 - La palette du gout-------------------------------------------------
 .flex-container-menu {
   display: flex;
   background: white;
@@ -659,19 +651,8 @@ header {
     @include souslignement;
   }
 
-  & a:hover {
+  & span:hover {
     background-size: 100% 100%;
-  }
-  & .titre-couleur-1:visited {
-    color: #000000;
-  }
-
-  & .titre-couleur-2:visited {
-    color: #000000;
-  }
-
-  & .titre-couleur-3:visited {
-    color: #000000;
   }
 
   & .produit-prix-1 {
@@ -718,9 +699,9 @@ header {
     color: $header-color-h1;
   }
 }
-//Fin de la page MENU 4
+//Fin de la page MENU 4--------------------------------------------------------------------
 
-//début mention LEGALE
+//début mention LEGALE---------------------------------------------------------------------
 .container-centrer {
   display: flex;
   flex-direction: column;
@@ -741,7 +722,7 @@ header {
     font-size: 1.5rem;
   }
 }
-//fin mention légale
+//fin mention légale-----------------------------------------------------------------------
 
 footer {
   a:link {
