@@ -341,6 +341,7 @@ header a:hover {
 }
 
 .menus-1 {
+  box-shadow: 0px 0px 10px -3px black;
   background: #FCDFDB;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -486,6 +487,7 @@ header a:hover {
 }
 
 .menus-2 {
+  box-shadow: 0px 0px 10px -3px black;
   background: #fff5fe;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -679,6 +681,7 @@ header a:hover {
 }
 
 .menus-3 {
+  box-shadow: 0px 0px 10px -3px black;
   background: #ebebeb;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -868,6 +871,7 @@ header a:hover {
 }
 
 .menus-4 {
+  box-shadow: 0px 0px 10px -3px black;
   background: #fdfffd;
   margin-top: 2rem;
   margin-bottom: 2rem;

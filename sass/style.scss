@@ -224,11 +224,11 @@ header {
 }
 
 .menus-1 {
+  @include box-shadow-contour-menus;
   background: $color-bg-menu-1;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 80%;
-  // flex-grow: 0;
+  width: 80%;  
   @include tablette-menu1;
   & h2 {
     font-family: "Satisfy", cursive;
@@ -372,6 +372,7 @@ header {
 }
 
 .menus-2 {
+  @include box-shadow-contour-menus;
   background: #fff5fe;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -496,6 +497,7 @@ header {
 }
 
 .menus-3 {
+  @include box-shadow-contour-menus;
   background: #ebebeb;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -615,6 +617,7 @@ header {
 }
 
 .menus-4 {
+  @include box-shadow-contour-menus;
   background: #fdfffd;
   margin-top: 2rem;
   margin-bottom: 2rem;

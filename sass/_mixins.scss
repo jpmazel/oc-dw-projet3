@@ -40,3 +40,7 @@
     transition: .2s;
   }
 }
+
+@mixin box-shadow-contour-menus {
+  box-shadow: 0px 0px 10px -3px black; //x, y , effet de flou, portée du blur
+}
