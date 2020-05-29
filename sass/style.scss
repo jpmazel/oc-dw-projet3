@@ -19,8 +19,9 @@
   & a:active {
     color: $header-color-h1;
   }
-  i {
+  h4 {
     font-style: normal;
+    display: inline-block;
   }
 }
 
@@ -176,6 +177,7 @@ header {
 
 .prochainement-anim {
   grid-area: prochainement;
+  
   @include btn-prochainement;
   @include anime-pointille;
 }

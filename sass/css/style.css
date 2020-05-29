@@ -37,8 +37,9 @@
 * a:active {
   color: orange;
 }
-* i {
+* h4 {
   font-style: normal;
+  display: inline-block;
 }
 
 body {
